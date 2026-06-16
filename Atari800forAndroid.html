@@ -1,13 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<!-- saved from url=(0045)http://users.uoa.gr/~knakos/atari800/android/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><meta name="keywords" content="Android, Smartphone, atari800, atari, emulator, 800XL, 130XE, market">
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="keywords" content="Android, Smartphone, atari800, atari, emulator, 800XL, 130XE, market">
 		
 		<meta name="HandheldFriendly" content="true">
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 
-		<link rel="shortcut icon" href="http://users.uoa.gr/~knakos/atari800/android/atari.ico">
+		<link rel="shortcut icon" href="img/atari.ico">
 		
-<title>Atari800 for Android™</title>
+<title>Atari800 for Androidâ„¢</title>
 
 </head><body bgcolor="#2D2D2D" text="#f1f1f1" link="#D0D000" onload="setInterval(&#39;blinkIt()&#39;,850)">
 <script type="text/javascript">
@@ -20,7 +19,7 @@ function blinkIt() {
 		<tbody><tr><td width="4%" height="30"></td><td width="3%" height="30"></td><td width="86%" height="30"></td><td width="3%" height="30"></td><td width="4%" height="30"></td></tr>
 		<tr><td></td><td height="30" colspan="3" bgcolor="#2d769d"></td><td></td></tr>
 		<tr><td></td><td bgcolor="#2d769d"></td><td bgcolor="#2d769d"><font face="Fixedsys, Courier New, Courier" size="6">
-				<img src="./Atari800 for Android™_files/Android_robot.svg.png" width="74" height="88" style="float: right" alt="android">
+				<img src="img/Android_robot.svg.png" width="74" height="88" style="float: right" alt="android">
 				<b>READY<br>
 				LOAD "D:ROID"<blink>&#9607;</blink></b><br>
 				</font><font face="Fixedsys, Courier New, Courier" size="2">
@@ -28,17 +27,17 @@ function blinkIt() {
 				<p><b>About</b></p>
 				<p align="justify">
 				Colleen, the official port for Android of the Atari800 emulator is up on the android play store.
-				Scan this QR code to get it (or <a href="market://details?id=name.nick.jubanka.colleen">search for 'Atari800' in the market</a>):<br>
+				Scan this QR code to get it (or <a href="https://play.google.com/store/apps/details?id=cz.pstehlik.colleen">search for 'Atari800' on Google Play</a>):<br>
 				</p><center>
-				<img src="./Atari800 for Android™_files/chart" width="200" height="200" alt="">
+				<img src="img/gplayqr.png" width="200" height="200" alt="">
 				</center>
 				<p></p>
 
 				<p><b><a name="manual">Manual</a></b></p>
 				<p align="justify">
-				The first thing the emulator requires are the images of the ROM chips used in the original machines.
+				Emulator starts even without images of the ROM chips used in the original machines thanks to Altirra reimplementation of the operating system and BASIC but it's always better if you can get the images of the original ROM.
 				The different Atari machines used distinct ROM chips.
-				They are essential (as in the emulator won't work without them) but have nevertheless been dumped and are available on the internet.
+				They have been dumped and are available on the internet.
 				For example, you can find the Atari XL ROMs as a legal download inside the XFormer package available at the
 				<a href="http://atari800.sourceforge.net/download.html">Atari800 project site</a> -- check out the <i>ROM files</i> link.
 				The standard names for each type of ROM are:<br><br>
@@ -50,34 +49,26 @@ function blinkIt() {
 				For example you can only have the 2 XL images and the emulator will work just fine for any XL-class machine.
 				You just won't be able to switch to older machines.
 				Note also that these are the exact file names which the emulator will look for when trying to boot the intended machine.<br><br>
-				To get the emulator working, you need to copy the ROM images to a directory on the device, typically <i>/sdcard/atari800</i>.
-				When the emulator starts it will ask you to point to the directory containing the ROMs.
-				Use the file selector to navigate to the directory (<i>/sdcard/atari800</i> in the previous example) and hit the
-				<i>Select directory</i> button.
-				You can at a later time add to this directory any missing ROMs; they will be detected automatically.
-				Also if you decide to relocate this directory at a later time, you can use the <i>Atari ROM Path</i> option in the emulator
-				preferences to point to another directory.
+
+				You can import the Operating System and BASIC ROM images using the built-in import feature.
+				Tap the <i>Preferences</i> icon on the top bar, then under <i>Emulation</i> tap <i>Import OS ROM</i>.
+				A file picker will open, allowing you to select the ROM files from any location on your device.
+				The emulator will copy them to its private storage automatically.
+				ROMs are detected automatically after import.
 				</p>
-				<p><b>Showing the menu</b></p>
+				<p><b>Menu bar</b></p>
 				<p align="justify">
-				Colleen supports all Android devices with Android version 1.6 and up.
-				In Android, the mechanism of obtaining a menu for an application, Colleen in this instance, varies.
-				In pre-Honeycomb (3.0) devices, a hardware menu key is provided for bringing up the menu.
-				Press this key Within Colleen to get to the menu.
-				In post Honeycomb devices this is fuzzy.
-				In Colleen, for these devices, an action bar is provided.
-				The action bar is hidden.
-				To bring it up, tap near the top of the screen; emulation will pause and the menu will be shown.
-				This scheme though does not preclude the hardware menu key.
-				</p>
-				<p>
-				TL;DR: To show the menu: If you've got a menu key on your device, use it. If you're running on 3.0+, also tap the top of the screen.
+				Colleen's menu is always accessible via a transparent icon bar at the top of the screen.
+				Three buttons are provided from left to right: <b>Open</b> (folder icon) to load disk images,
+				<b>Keyboard</b> (keyboard icon) to show the soft keyboard, and <b>Preferences</b> (gear icon) to
+				access all emulator settings. The bar is always visible and does not need to be summoned.
 				</p>
 				<b>Console keys</b><br>
 				The atari's console keys are provided in an overlay on the screen.
 				To show the overlay, touch near the top-right of the device's screen.
 				The console keys overlay will popup.
 				It will disappear after a few seconds of inactivity to declutter the screen.
+				In portrait orientation the console keys stay visible at all times.
 				Console keys work as usual with the exception of the Reset key.
 				To prevent accidental resets, the reset key must be held down for half a second and released to perform a warm reset
 				(this is the reset key's normal operation on the atari).
@@ -121,6 +112,7 @@ function blinkIt() {
 				The emulator supports the following file formats: <b>atr</b>, <b>atz</b>, <b>xfd</b>, <b>dcm</b>, <b>xfz</b>, <b>xex</b>, <b>cas</b>, 
 				<b>rom</b>, <b>bin</b>, <b>car</b>, <b>a8s</b>, <b>com</b>, <b>exe</b>. 
 				These are the extensions of the filenames supported and range from compressed/uncompressed disk images to cartridges and cassettes.<br><br>
+<!--
 				Many games come in several disk images.
 				To insert a disk image in the drive and not have the machine reboot, simply long press on the item.
 				A menu will show up displaying the currently mounted images on drives D1: to D4:.
@@ -134,21 +126,20 @@ function blinkIt() {
 				The key pattern which is searched is of the form "s&lt;number&gt;".
 				Moreover, supposing that a disk images has 4 sides and currently the fourth side is mounted, the some option will mount the first image
 				(i.e. the images wrap around).
+-->
 				</p>
 				<p><b>Save state load/save</b></p>
 				<p align="justify">
 				The emulator supports saving the entire contents of the ROM+RAM to a state file.
 				This can be loaded later; emulation will resume where it left off.
 				Saved states can be used as means f.ex. saving a game and reloading it later.
-				To save the current emulator state, you must first provide a path where the state file will be saved.
-				To do this, touch the <i>Save State Path</i> option in the preferences.
-				The file selector will pop up. Touch <i>Select directory</i> to set the required path.
-				This is required only the first time you need to use the state save facilities.
-				To actually save the emulator state, touch the <i>Save Current State</i> option in the preferences.
+				To save the current emulator state, open <i>Preferences</i> and tap <i>Save Current State</i>
+				under the <i>Emulation</i> section.
 				A dialog will pop up where you can enter a name for this state.
-				The <b>.a8s</b> extension will be appended to the name you type, and this file will be saved at the path you've set.
-				To subsequently load this save state, use the normal <i>Open</i> option in the emulator menu.
-				navigate to your state save path and open the required <b>.a8s</b> file.
+				The <b>.a8s</b> extension will be appended to the name you type.
+				To load a previously saved state, tap the <i>Load State</i> option in the same section.
+				A list of available states will be shown; tap the one you want to load.
+				State files are stored in the app's private storage, no manual path selection is needed.
 				</p>
 				<p><b>Input</b></p>
 				<p align="justify">
@@ -229,7 +220,7 @@ function blinkIt() {
 				To address this, use the <i>Derotate Arrow Keys</i> preference.
 				Set this to either Left or Right to manually derotate the keyboard's arrow keys.<br><br>
 				For keyboard-less devices, a virtual keyboard is provided.
-				To show it, touch the <i>Keyboard</i> option in the emulator's menu.
+				To show it, tap the keyboard icon on the top bar.
 				To hide it, press the <i>Back</i> key on the device.<br><br>
 				</p><p><b>Breakdown by function</b></p>
 				<p align="justify">
@@ -283,13 +274,15 @@ function blinkIt() {
 							<dt><i>Machine Type</i></dt>
 							<dd>Select emulated machine type and size of RAM. You must have the required ROM images, as described above, or the
 								machine won't boot. Forces a cold reset if changed.</dd>
-							<dt><i>Atari ROM Path</i></dt>
-							<dd>Brings up the file selector to choose the directory where the ROM images reside (see above).</dd>
-							<dt><i>State Save Path</i></dt>
-							<dd>Brings up the file selector to choose the directory where the state save files will reside (see above).</dd>
+							<dt><i>Import OS ROM</i></dt>
+							<dd>Opens a file picker to select ROM images from any location on your device.
+								They are copied to the app's private storage and detected automatically.</dd>
 							<dt><i>Save Current State</i></dt>
-							<dd>Saves the current emulator state with a filename you provide to the path defined by the previous option.
-								Use the normal Open menu option to load your saved states. (Option is disabled by default until a state save path has been set)</dd>
+							<dd>Saves the current emulator state with a filename you provide.
+								State files are stored in the app's private storage.</dd>
+							<dt><i>Load State</i></dt>
+							<dd>Lists all saved states in the app's private storage.
+								Tap one to load it and resume emulation from that point.</dd>
 							<dt><i>Disable BASIC</i></dt>
 							<dd>When checked, this is like holding down the option atari key when booting.</dd>
 							<dt><i>Show Atari Speed, Drive Access, Sector Access</i></dt>
@@ -377,7 +370,19 @@ function blinkIt() {
 				<p><b>Changelogs</b></p>
 				<p align="justify">
 
-				<b>3.0</b><br>
+				<b>4.0</b><br>
+				<i>Changes for version 4.0:</i><br>
+				<br><b>*</b> New always-visible transparent menu bar replaces the hidden action bar.
+				<br><b>*</b> OS ROM imported via system file picker; no more file permission hassles.
+				<br><b>*</b> Save states in private app storage with new Load State option.
+				<br><b>*</b> Console keys always visible in portrait mode.
+				<br><b>*</b> Console keys scale correctly on high-density displays.
+				<br><b>*</b> Fixed joystick positioning after screen rotation.
+				<br><b>*</b> Package renamed to cz.pstehlik.colleen.
+				<br><b>*</b> Updated about dialog with current maintainer credits.
+				<br><b>*</b> Various bug fixes and improvements.
+
+				<br><br><b>3.0</b><br>
 				<i>Changes for version 3.0:</i><br>
 				<br><b>*</b> Native Open SL ES sound for perfect playback for &gt; 2.3 devices.
 				<br><b>*</b> Fix for no sound for NTSC machines under certain circumstances.
@@ -438,7 +443,6 @@ function blinkIt() {
 				</p>
 
 				<br><br><br>
-				Visitors: <img src="./Atari800 for Android™_files/Count.cgi" width="48" height="9" alt="">
 
 		</font></td><td bgcolor="#2d769d"></td><td></td></tr>
 		<tr><td height="30"></td><td height="30" colspan="3" bgcolor="#2d769d"></td><td height="30"></td></tr>
