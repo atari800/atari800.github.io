@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0045)http://users.uoa.gr/~knakos/atari800/android/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><meta name="keywords" content="Android, Smartphone, atari800, atari, emulator, 800XL, 130XE, market">
+		
+		<meta name="HandheldFriendly" content="true">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+
+		<link rel="shortcut icon" href="http://users.uoa.gr/~knakos/atari800/android/atari.ico">
+		
+<title>Atari800 for Android™</title>
+
+</head><body bgcolor="#2D2D2D" text="#f1f1f1" link="#D0D000" onload="setInterval(&#39;blinkIt()&#39;,850)">
+<script type="text/javascript">
+function blinkIt() {
+ vis = document.all.tags('blink')[0].style;
+ vis.visibility = (vis.visibility == 'visible') ? 'hidden' : 'visible';
+}
+</script>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tbody><tr><td width="4%" height="30"></td><td width="3%" height="30"></td><td width="86%" height="30"></td><td width="3%" height="30"></td><td width="4%" height="30"></td></tr>
+		<tr><td></td><td height="30" colspan="3" bgcolor="#2d769d"></td><td></td></tr>
+		<tr><td></td><td bgcolor="#2d769d"></td><td bgcolor="#2d769d"><font face="Fixedsys, Courier New, Courier" size="6">
+				<img src="./Atari800 for Android™_files/Android_robot.svg.png" width="74" height="88" style="float: right" alt="android">
+				<b>READY<br>
+				LOAD "D:ROID"<blink>&#9607;</blink></b><br>
+				</font><font face="Fixedsys, Courier New, Courier" size="2">
+
+				<p><b>About</b></p>
+				<p align="justify">
+				Colleen, the official port for Android of the Atari800 emulator is up on the android play store.
+				Scan this QR code to get it (or <a href="market://details?id=name.nick.jubanka.colleen">search for 'Atari800' in the market</a>):<br>
+				</p><center>
+				<img src="./Atari800 for Android™_files/chart" width="200" height="200" alt="">
+				</center>
+				<p></p>
+
+				<p><b><a name="manual">Manual</a></b></p>
+				<p align="justify">
+				The first thing the emulator requires are the images of the ROM chips used in the original machines.
+				The different Atari machines used distinct ROM chips.
+				They are essential (as in the emulator won't work without them) but have nevertheless been dumped and are available on the internet.
+				For example, you can find the Atari XL ROMs as a legal download inside the XFormer package available at the
+				<a href="http://atari800.sourceforge.net/download.html">Atari800 project site</a> -- check out the <i>ROM files</i> link.
+				The standard names for each type of ROM are:<br><br>
+				atariosa.rom - OS/A,<br>
+				atariosb.rom - OS/B,<br>
+				atarixl.rom - XL, and<br>
+				ataribas.rom - XL Basic<br><br>
+				The emulator does not require all of them to work.
+				For example you can only have the 2 XL images and the emulator will work just fine for any XL-class machine.
+				You just won't be able to switch to older machines.
+				Note also that these are the exact file names which the emulator will look for when trying to boot the intended machine.<br><br>
+				To get the emulator working, you need to copy the ROM images to a directory on the device, typically <i>/sdcard/atari800</i>.
+				When the emulator starts it will ask you to point to the directory containing the ROMs.
+				Use the file selector to navigate to the directory (<i>/sdcard/atari800</i> in the previous example) and hit the
+				<i>Select directory</i> button.
+				You can at a later time add to this directory any missing ROMs; they will be detected automatically.
+				Also if you decide to relocate this directory at a later time, you can use the <i>Atari ROM Path</i> option in the emulator
+				preferences to point to another directory.
+				</p>
+				<p><b>Showing the menu</b></p>
+				<p align="justify">
+				Colleen supports all Android devices with Android version 1.6 and up.
+				In Android, the mechanism of obtaining a menu for an application, Colleen in this instance, varies.
+				In pre-Honeycomb (3.0) devices, a hardware menu key is provided for bringing up the menu.
+				Press this key Within Colleen to get to the menu.
+				In post Honeycomb devices this is fuzzy.
+				In Colleen, for these devices, an action bar is provided.
+				The action bar is hidden.
+				To bring it up, tap near the top of the screen; emulation will pause and the menu will be shown.
+				This scheme though does not preclude the hardware menu key.
+				</p>
+				<p>
+				TL;DR: To show the menu: If you've got a menu key on your device, use it. If you're running on 3.0+, also tap the top of the screen.
+				</p>
+				<b>Console keys</b><br>
+				The atari's console keys are provided in an overlay on the screen.
+				To show the overlay, touch near the top-right of the device's screen.
+				The console keys overlay will popup.
+				It will disappear after a few seconds of inactivity to declutter the screen.
+				Console keys work as usual with the exception of the Reset key.
+				To prevent accidental resets, the reset key must be held down for half a second and released to perform a warm reset
+				(this is the reset key's normal operation on the atari).
+				Keeping it held down for a total of 1 second and then releasing it will result in a cold reset, equivalent to
+				power cycling the atari.
+				<p></p>
+				<p><b>Playing Planetary Defense 2012</b></p>
+				<p>
+				Planetary Defense is an arcade game by Charles Bachand and <a href="http://klanky.com/">Tom Hudson</a>
+				<a href="http://analog.katorlegaz.com/analog_1984-03_120dpi_jpeg_cropped_thumpnugget2/analog_1984-03_083.html">
+					published in the A.N.A.L.O.G. Computing magazine</a> on March 1984.
+				Tom has got around to enhancing Planetary Defense especially for Colleen to add two new features:
+				</p><ul>
+					<li> A specially crafted interface to benefit from the touchscreen</li>
+					<li> An online high score table
+				</li></ul>
+				Colleen has been enhanced itself to support these new features.
+				The end result: A highly enjoyable arcade game. We hope you'll like it!
+				<p></p>
+				<p>
+				Objective: Protect your planet from the alien space bombs.
+				As your defense satellite orbits your planet, tap the screen to send charge particle projectiles flying the enemy's way.
+				</p>
+				<p>
+				Planetary Defense 2012 is included in this release of Colleen.
+				To play, go into the preferences screen (menu button or action bar) and choose "Play Planetary Defence 2012" from the "Extras" section.
+				Press OPTION on the starting screen to select the touchscreen control scheme.
+				Tap top-left and bottom-down, as directed to calibrate the touchscreen controls.
+				When your game ends, you will be asked to enter a name for the high score table (you may skip this by just pressing Return).
+				Upon entering a name and pressing Return, Colleen will ask you if you want to go online and submit the high score.
+				Pressing 'Yes' on this dialog will launch the default browser, which will submit your score and allow you to browse the rankings.
+				Hit 'Back' to go back to Colleen.
+				Note that Colleen automatically enables the 'Touchscreen Mode' preference when playing Planetary Defense 2012.
+				You need to manually go uncheck this option if you intend to, f.ex., boot another game and use the joystick.
+				Otherwise, this preference is cleared each time Colleen is restarted.
+				</p>
+				<p><b>Opening a disk image</b></p>
+				<p align="justify">
+				Once the emulator is up and running, hit the <i>Menu</i> button and use the <i>Open</i> option to bring up the file selector.
+				Navigate to the required folder on touch an item to auto boot it.
+				The emulator supports the following file formats: <b>atr</b>, <b>atz</b>, <b>xfd</b>, <b>dcm</b>, <b>xfz</b>, <b>xex</b>, <b>cas</b>, 
+				<b>rom</b>, <b>bin</b>, <b>car</b>, <b>a8s</b>, <b>com</b>, <b>exe</b>. 
+				These are the extensions of the filenames supported and range from compressed/uncompressed disk images to cartridges and cassettes.<br><br>
+				Many games come in several disk images.
+				To insert a disk image in the drive and not have the machine reboot, simply long press on the item.
+				A menu will show up displaying the currently mounted images on drives D1: to D4:.
+				Touch the drive where you want to mount the image to.
+				Touch <i>Unmount All</i> to unmount images from all drives.
+				There is also a handy shortcut to inserting disk images while the emulator is running:
+				Bring up the emulator menu and touch the <i>Next Side</i> option.
+				Currently this only support images with appropriate filenames using a specific pattern.
+				As an example, if the currently running image's filename in drive D1: is "My Game <b>(s1)</b>.atr", hitting the <i>Next Side</i> option will
+				have the emulator try to mount "My Game <b>(s2)</b>.atr".
+				The key pattern which is searched is of the form "s&lt;number&gt;".
+				Moreover, supposing that a disk images has 4 sides and currently the fourth side is mounted, the some option will mount the first image
+				(i.e. the images wrap around).
+				</p>
+				<p><b>Save state load/save</b></p>
+				<p align="justify">
+				The emulator supports saving the entire contents of the ROM+RAM to a state file.
+				This can be loaded later; emulation will resume where it left off.
+				Saved states can be used as means f.ex. saving a game and reloading it later.
+				To save the current emulator state, you must first provide a path where the state file will be saved.
+				To do this, touch the <i>Save State Path</i> option in the preferences.
+				The file selector will pop up. Touch <i>Select directory</i> to set the required path.
+				This is required only the first time you need to use the state save facilities.
+				To actually save the emulator state, touch the <i>Save Current State</i> option in the preferences.
+				A dialog will pop up where you can enter a name for this state.
+				The <b>.a8s</b> extension will be appended to the name you type, and this file will be saved at the path you've set.
+				To subsequently load this save state, use the normal <i>Open</i> option in the emulator menu.
+				navigate to your state save path and open the required <b>.a8s</b> file.
+				</p>
+				<p><b>Input</b></p>
+				<p align="justify">
+				<b>Joystick</b><br>
+				Central to the oldskool fun is the emulation of the joystick input methods of the Atari.
+				The emulator features several ways to generate joystick input.
+				The on-screen joystick is probably the easiest.
+				The screen is divided horizontally into the joystick side and the fire button side.
+				Touching the joystick side will result in joystick action and respectively for the fire button side.
+				Normally, the left portion of the screen is mapped to the joystick side and the right portion to the fire button side,
+				but this allocation can be inverted by ticking the <i>Right-Handed Joystick</i> option in the emulator Preferences.
+				The percentage of the screen area allocated to either side is also configurable via the <i>Joystick Screen Split</i>
+				option in the Preferences.
+				The <i>Search</i> button of the device also serves as a fire button substitute.
+				This allows single touch devices (pre Eclair) to still use the on screen joystick.
+				The fire button, as well as all joystick input, can further be remapped to other keys through the <i>Keyboard joystick</i> preference.<br><br>
+				The joystick area is marked by a transparent rectangle.
+				Touches registered within the joystick area (joystick deflections) will cause input to the joystick in port 0.
+				A dead band area is also observed, the size of which is configurable at the <i>Joystick Deadband</i> preference.
+				A dead band of 30% for instance means that joystick deflections within a 30% margin around the center will not register at all.
+				The joystick area can also be dragged around by keeping pressed the joystick touch and dragging outside the joystick area.
+				This comes in handy when there is too much action on screen to keep an eye on where your finger is positioned.
+				This feature can be turned off however (why? :-)) via the <i>Anchor Joystick</i> preference.
+				The joystick area can be repositioned in another way as well:
+				When the joystick is idle (no touches) a touch outside the joystick area but within the joystick side of the screen
+				will recenter the joystick area around the touch point.
+				The <i>Joystick Grace Area</i> preference allows a leniency to this rule:
+				it extends (virtually, not shown) the joystick area by some amount.
+				Any touches within this virtual area will result in joystick movement and small drag-through repositioning,
+				rather than a full joystick area repositioning centered around the touch point.
+				The joystick area's visibility, size and transparency strength can all be tweaked in the emulator preferences.<br><br>
+				The hardware keyboard can also serve as a joystick input for joystick port 0.
+				The option <i>Keyboard Joystick</i> must be enabled in the preferences.
+				The sub-menu <i>Configure Keyboard</i> in the preferences can be used to remap the keys used to perform the joystick actions.
+				There are two kinds of actions: fixed and remappable.
+				Fixed actions are those whose input can be changed but their effect cannot be changed.
+				Fixed actions are: Up, Down, Left, Right and Fire.
+				Remappable actions are those that the input (what you press) is configurable but also their effect (what gets done) is configurable too.
+				There are up to three generic mappable actions, divided by the fixed actions by their own heading in the keyboard configuration screen.
+				Remappable actions can be used to input keycodes, for example, when using a controller (when I press the X button, I want the spacebar to be pressed).
+				To change the mapping for an action, touch the action and a dialog will pop up, waiting for input.
+				At this time, you can press the key to assign the action or touch <i>Cancel</i> to abandon the mapping.
+				If the action is fixed, as soon as a key is sensed the dialog is dismissed and the new mapping is registered.
+				If the action is a generic mappable one, a second dialog will show up which allows you to enter the key you want to be pressed.
+				Some keys are reserved for the system and cannot be mapped at this time, including: the shift keys, volume up/down, the menu, search
+				back and home keys, power, call and end call keys.
+				Pressing these while mapping will result in no action (as if nothing was pressed).<br><br>
+				The Wii Controller is another way to provide joystick input to the emulator.
+				You first need to download the 'Wiimote controller' app from the android market.
+				Set it up according to the instructions, then fire up Atari800.
+				To use it, the <i>Keyboard Joystick</i> option must be checked in the emulator preferences, as the Wiimote controller
+				acts as a keyboard.
+				Use the <i>Configure Keyboard</i> option in the preferences to remap Wii remote buttons to joystick actions, using the
+				procedure outlined in the previous paragraph.
+				The Wii classic controller can also be used for input.<br><br>
+				A short note with respect to the Xperia Play devices: The square, triangle, the X and both left and right triggers are supported.
+				As such, they can be properly configured within the <i>Configure Keyboard</i> preference.
+				The circle key cannot be mapped to anything as, for compatibility reasons, it is always mapped to the Back key (which exits the emulator).<br><br>
+				<b>Paddle</b><br>
+				Some games support and/or are better with a paddle controller.
+				Paddle emulation is provided by interpreting the x axis of the touch/mouse input as the amount of paddle deflection.
+				To switch on paddle emulation check the <i>Paddle mode</i> option in the preferences.
+				The joystick area will be replaced by a slim rectangle as a visual reminder of the horizontal space which will be used for paddle emulation.
+				Drag from left to right to provide paddle input (and don't forget to toggle paddle mode off in the preferences to go back to joystick input :-).<br><br>
+				<b>Keyboard</b><br>
+				The device's hardware keyboard is used for keyboard input in the emulator.
+				If the <i>Keyboard Joystick</i> option has been selected in the preferences, then the respective keys are muted;
+				their inputs serve as joystick inputs.
+				The directional pad (DPAD) keys emit the atari arrow keycodes ('Control' + '-', '=', '+', '*').
+				DPAD Center sends the Break key code.
+				The tilde key ('~') is mapped to the Escape key.
+				The backquote ('`') is mapped to the capslock key.
+				The left-curly-bracket ('{') is mapped to the Atari key.
+				The left shift of the keyboard is used as the atari's shift key, while the right shift is used as atari's control key.<br><br>
+				External keyboards can also be used.
+				Android seems to rotate the external keyboard's arrow keys in the same fashion as the built-in DPAD keys.
+				And although this rotation makes sense for the built in arrows, it wreaks havoc with the external keyboard.
+				To address this, use the <i>Derotate Arrow Keys</i> preference.
+				Set this to either Left or Right to manually derotate the keyboard's arrow keys.<br><br>
+				For keyboard-less devices, a virtual keyboard is provided.
+				To show it, touch the <i>Keyboard</i> option in the emulator's menu.
+				To hide it, press the <i>Back</i> key on the device.<br><br>
+				</p><p><b>Breakdown by function</b></p>
+				<p align="justify">
+				<b>Menu</b><br>
+				</p><dl>
+					<dt><i>Open</i></dt>
+					<dd>Shows the file selector. Back to cancel. Touch to mount and boot. Long press to mount only. Use the keyboard to filter
+						filenames.</dd>
+					<dt><i>Next side</i></dt>
+					<dd>Attempt to mount the next side in a disk set. A filename pattern is matched, as described above.</dd>
+					<dt><i>Keyboard</i></dt>
+					<dd>Show the virtual keyboard. Back to hide it. Keyboard won't show if the device has a hardware keyboard, or at least if it
+						is exposed (slided out).
+					</dd><dt><i>Preferences</i></dt>
+					<dd>Show the preferences screen for the emulator.</dd>
+					<dt><i>Quit</i></dt>
+					<dd>Quits the emulator. Make a good habit of quitting the emulator cleanly, either by this option or pressing the back key twice.
+						It gives the emulator a chance to clean up any temporary files.</dd>
+				</dl>
+				<b>Preferences</b><br>
+				<dl>
+					<dt>Graphics</dt>
+					<dd>
+						<dl>
+							<dt><i>NTSC TV Mode</i></dt>
+							<dd>When checked, NTSC mode is enabled; when unchecked PAL mode is enabled. NTSC mode requires mode CPU power for emulation.</dd>
+							<dt><i>Aspect</i></dt>
+							<dd>Scale the screen while maintaining correct aspect. None is no aspect enforced (fill whole screen), portrait &amp;
+								landscape means only scale aspect corrected for the respective orientation (the other just fills the screen) and
+								both means always perform aspect correct scaling (in either orientation).
+								<i>Special Note:</i> For devices without keyboard, you might find handy to set this preference to 'Portrait':
+								The soft-keyboard should fit in the bottom part of the screen, not obstructing the playfield (BASIC, text adventures etc.)</dd>
+							<dt><i>Bilinear Scaling</i></dt>
+							<dd>Use bilinear filtering when scaling the atari screen. Some like it, I don't. Also should be slower (in principle)
+								when bilinear scaling is on.</dd>
+							<dt><i>Artifacting</i></dt>
+							<dd>Set artifacting on/off and colors.</dd>
+							<dt><i>Frameskip</i></dt>
+							<dd>How frequently the atari screen is repainted to the device. If you're getting less optimal atari speeds, set this
+								to higher values. Set to auto to have the emulator adjust the frameskip value in real time to maintain 100% of
+								Atari speed.</dd>
+							<dt><i>Accurate Collisions</i></dt>
+							<dd>Disable this to gain more emulation speed. Also, games may be broken by this.</dd>
+							<dt><i>Crop Horizontally, Vertically</i></dt>
+							<dd>Use this to get rid of the borders around the atari screen. Sane values are 320x200.</dd>
+						</dl>
+					</dd>
+					<dt>Emulation</dt>
+					<dd>
+						<dl>
+							<dt><i>Machine Type</i></dt>
+							<dd>Select emulated machine type and size of RAM. You must have the required ROM images, as described above, or the
+								machine won't boot. Forces a cold reset if changed.</dd>
+							<dt><i>Atari ROM Path</i></dt>
+							<dd>Brings up the file selector to choose the directory where the ROM images reside (see above).</dd>
+							<dt><i>State Save Path</i></dt>
+							<dd>Brings up the file selector to choose the directory where the state save files will reside (see above).</dd>
+							<dt><i>Save Current State</i></dt>
+							<dd>Saves the current emulator state with a filename you provide to the path defined by the previous option.
+								Use the normal Open menu option to load your saved states. (Option is disabled by default until a state save path has been set)</dd>
+							<dt><i>Disable BASIC</i></dt>
+							<dd>When checked, this is like holding down the option atari key when booting.</dd>
+							<dt><i>Show Atari Speed, Drive Access, Sector Access</i></dt>
+							<dd>These toggle on off indicators. The atari speed indicator shows how fast the emulated machine runs. If this is
+								significantly lower than 100% consider increasing the frameskip, disabling collisions, disabling the high quality sound,
+								lowering the sound mixing frequency and so on.</dd>
+							<dt><i>Allow Web Browser</i></dt>
+							<dd>By checking this option the B: device gets generated in the emulated machine, to be used when the emulated program wants web access
+								(i.e. Planetary Defence 2012). Uncheck this to ignore browser requests.</dd>
+						</dl>
+					</dd>
+					<dt>Input</dt>
+					<dd>
+						<dl>
+							<dt><i>Keyboard Joystick</i></dt>
+							<dd>If checked, the keys defined in the next option will control the joystick. This also has to be checked for the
+								Wii controller to work.</dd>
+							<dt><i>Configure Keyboard</i></dt>
+							<dd>Shows a separate preference screen where the joystick keys can be remapped. Select the action you need to reassign
+								then press a key on the device or the Wii controller to change the mapping. Don't forget to use the Wiimote controller
+								application first for the Wii controller.</dd>
+							<dt><i>Derotate Arrow Keys</i></dt>
+							<dd>Use this option to fix the arrow keys on external keyboards, when switching from portrait to landscape and vice versa.</dd>
+							<dt><i>Joystick Visible</i></dt>
+							<dd>Toggle visibility of the joystick overlays. The on-screen joystick still works, you just don't see it.</dd>
+							<dt><i>Joystick Opacity</i></dt>
+							<dd>Set the transparency level of the joystick overlays. Higher is less transparent.</dd>
+							<dt><i>Joystick Area Size</i></dt>
+							<dd>Set the size of the on-screen joystick. Depends on the thumb, really.</dd>
+							<dt><i>Right-Handed Joystick</i></dt>
+							<dd>Swap the areas the emulator assigns to joystick and fire button. Normally (unchecked) a portion of the screen
+								(defined by the joystick screen split preference below) on the left hand side is allocated to the joystick. The rest is
+								allocated to the fire button. This preference inverts these areas, allocating the percentage defined by screen split
+								on the right hand side while the rest is allocated to the fire button.</dd>
+							<dt><i>Anchor Joystick</i></dt>
+							<dd>Stop the joystick area slide-around action. This pins the joystick area to the current position.</dd>
+							<dt><i>Joystick Screen Split</i></dt>
+							<dd>Define the percentage of screen allocated to the joystick. 50% means down the middle. It is implied that any touch event
+								in the joystick side is a joystick event and vice versa for the fire button. The allocation is inverted if the right-handed
+								joystick option is checked.</dd>
+							<dt><i>Joystick Deadband</i></dt>
+							<dd>Percentage of the joystick area around its center within which no joystick input will be generated.
+								Increase if the joystick seems too sensitive.</dd>
+							<dt><i>Joystick Grace Area</i></dt>
+							<dd>Virtually extends the joystick area by set amount to prevent joystick recenters for closeby touches.</dd>
+							<dt><i>Paddle Mode</i></dt>
+							<dd>When checked, paddle input will be provided instead of joystick.</dd>
+							<dt><i>Touchscreen Mode</i></dt>
+							<dd>A special control scheme crafted for Planetary Defense 2012. When this is check, all other on-screen joystick/paddle input
+								modes are disabled.</dd>
+						</dl>
+					</dd>
+					<dt>Sound</dt>
+					<dd>
+						<dl>
+							<dt><i>Sound</i></dt>
+							<dd>Switch sound off to gain performance.</dd>
+							<dt><i>Mix Rate</i></dt>
+							<dd>Lower the mix rate to increase emulator performance. Does not make that much of an impact to lower this.</dd>
+							<dt><i>Sound Buffer Size</i></dt>
+							<dd>Lower size is lower latency. Lower size though could lead to clicks in sound audible during emulation (and not during
+								pausing/unpausing, entering the menu preferences, etc. These are normal). Higher size means higher latency which is
+								not desirable but gets rid of sound clicks in less powerful devices.</dd>
+							<dt><i>16bit Sound</i></dt>
+							<dd>Using 16bit sound with high quality sound disabled (below) makes no difference, apart from straining the cpu more.
+								<i>Note:</i> Android documentation recommends using 16bit sound, as it is more compatible.</dd>
+							<dt><i>High Quality Sound</i></dt>
+							<dd>When enabled, high quality low pass filtering is used for POKEY emulation. Apart from increased cpu load (not too much
+								though) this also leads to a delay of a few seconds when the emulator starts up, while the filter coefficients are
+								calculated.</dd>
+							<dt><i>Force Legacy Playback</i></dt>
+							<dd>On devices with android version greater than 2.3, the native OpenSL ES audio driver will be used for accurate sound playback.
+						  		Setting this option will override this automatic selection and force sound playback through the legacy android audio (use for potential compatibility issues).</dd>
+						</dl>
+					</dd>
+					<dt>Extras</dt>
+					<dd>
+						<dl>
+							<dt><i>Planetary Defense 2012</i></dt>
+							<dd>Autoboot the machine with the built-in Planetary Defense 2012 image. Also, auto-enable the 'Touchscreen Mode' preference above.
+							Yes. Do it!</dd>
+					</dl></dd>
+				</dl>
+				<p></p>
+				<p><b>Changelogs</b></p>
+				<p align="justify">
+
+				<b>3.0</b><br>
+				<i>Changes for version 3.0:</i><br>
+				<br><b>*</b> Native Open SL ES sound for perfect playback for &gt; 2.3 devices.
+				<br><b>*</b> Fix for no sound for NTSC machines under certain circumstances.
+				<br><b>*</b> Various other bugfixes.
+				<br><b>*</b> Upgrade to atari800 core v. 3.1.0.
+
+				<br><br><b>2.0</b><br>
+				<i>Changes for version 2.0:</i><br>
+				<br><b>*</b> Free game included: Planetary Defense 2012. Find it in the Preferences.
+				<br><b>*</b> UI overhaul for Honeycomb+ devices
+				<br><b>*</b> When aspect correction is portrait, make room for the soft keyboard
+				<br><b>*</b> Bugfix: Crashes while loading ROMs
+				<br><b>*</b> Bugfix: Won't load OSB ROMs
+				<br><b>*</b> Bugfix: Crashes in keyboard-joystick remapping
+				<br><b>*</b> Warning: State saves from previous version are incompatible (sorry)
+				<br><b>*</b> Numerous bug fixes and improvements
+				<br><br>Thank you for your continued support and bug/feature reports
+
+				<br><br><b>1.4</b><br>
+				<i>Changes for version 1.4:</i><br>
+				<br><b>*</b> Android port renamed to Colleen 
+				<br><b>*</b> Implemented paddle emulation 
+				<br><b>*</b> Allow file selector to roam outside the directory provided by the OS (allows for weird mount points on some devices) 
+				<br><b>*</b> Support for saving and loading the emulator state 
+				<br><b>*</b> Various small bug fixes and improvements 
+
+				<br><br><b>1.3</b><br>
+				<i>Changes for version 1.3:</i><br>
+				<br><b>*</b> New NTSC/PAL preference
+				<br><b>*</b> New keyboard action mapping preferences
+				<br><b>*</b> Added support for Xperia Play fire buttons
+				<br><b>*</b> DPAD-CENTER now mapped to Break key
+				<br><b>*</b> Atari800 core version 2.2.1
+				<br><b>*</b> Several bug fixes and improvements
+				<br><br>Thank you for your continued support and bug/feature reports :-)
+
+				<br><br><b>1.2</b><br>
+				<i>Changes for version 1.2:</i><br>
+				<br><b>*</b> New disk management menu (long press in the file selector)
+				<br><b>*</b> New screen cropping preferences
+				<br><b>*</b> New arrow key derotation preference for external keyboards
+				<br><b>*</b> DPAD-CENTER and tilde (~) now map to Escape key
+				<br><b>*</b> Atari800 core version 2.2.0
+				<br><b>*</b> Fix rare sound-related crashes
+				<br><b>*</b> Various fixes and improvements
+				<br><br>Thanks to the bug/feature reporters!
+
+				<br><br><b>1.1a</b><br>
+				<br>This version is a quick fix for a regression to the <i>Anchor Joystick</i>
+					preference, introduced in v1.1.
+
+				<br><br><b>1.1</b><br>
+				<br><b>*</b> Fix a crash when sound was switched off
+				<br><b>*</b> Added support for .com and .exe files
+				<br><b>*</b> Added the auto frameskip option
+				<br><b>*</b> Added the new <i>Joystick Grace Area</i> preference
+				<br>Thanks to the bug/feature reporters!
+				</p>
+
+				<br><br><br>
+				Visitors: <img src="./Atari800 for Android™_files/Count.cgi" width="48" height="9" alt="">
+
+		</font></td><td bgcolor="#2d769d"></td><td></td></tr>
+		<tr><td height="30"></td><td height="30" colspan="3" bgcolor="#2d769d"></td><td height="30"></td></tr>
+		<tr><td height="30" colspan="5"></td></tr>
+	</tbody></table>
+
+
+
+
+</body></html>
