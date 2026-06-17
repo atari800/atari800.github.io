@@ -8,10 +8,10 @@
 		
 <title>Atari800 for Android™</title>
 
-</head><body bgcolor="#2D2D2D" text="#f1f1f1" link="#D0D000" onload="setInterval(&#39;blinkIt()&#39;,850)">
+</head><body bgcolor="#2D2D2D" text="#f1f1f1" link="#D0D000" onload="setInterval('blinkIt()',850)">
 <script type="text/javascript">
 function blinkIt() {
- vis = document.all.tags('blink')[0].style;
+ vis = document.getElementById('blink').style;
  vis.visibility = (vis.visibility == 'visible') ? 'hidden' : 'visible';
 }
 </script>
@@ -21,7 +21,7 @@ function blinkIt() {
 		<tr><td></td><td bgcolor="#2d769d"></td><td bgcolor="#2d769d"><font face="Fixedsys, Courier New, Courier" size="6">
 				<img src="img/Android_robot.svg.png" width="74" height="88" style="float: right" alt="android">
 				<b>READY<br>
-				LOAD "D:ROID"<blink>&#9607;</blink></b><br>
+				LOAD "D:ROID"<span id="blink">▇</span></b><br>
 				</font><font face="Fixedsys, Courier New, Courier" size="2">
 
 				<p><b>About</b></p>
@@ -38,13 +38,14 @@ function blinkIt() {
 				Emulator starts even without images of the ROM chips used in the original machines thanks to Altirra reimplementation of the operating system and BASIC but it's always better if you can get the images of the original ROM.
 				The different Atari machines used distinct ROM chips.
 				They have been dumped and are available on the internet.
-				For example, you can find the Atari XL ROMs as a legal download inside the XFormer package available at the
-				<a href="http://atari800.sourceforge.net/download.html">Atari800 project site</a> -- check out the <i>ROM files</i> link.
+				For example, you can find the Atari XL ROMs at the
+				<a href="https://atari800.github.io/download.html">Atari800 project site</a> -- check out the <i>ROM files</i> link.
 				The standard names for each type of ROM are:<br><br>
 				atariosa.rom - OS/A,<br>
 				atariosb.rom - OS/B,<br>
-				atarixl.rom - XL, and<br>
-				ataribas.rom - XL Basic<br><br>
+				atarixl.rom - XL,<br>
+				ataribas.rom - XL Basic, and<br>
+				5200.rom - 5200<br><br>
 				The emulator does not require all of them to work.
 				For example you can only have the 2 XL images and the emulator will work just fine for any XL-class machine.
 				You just won't be able to switch to older machines.
@@ -75,58 +76,13 @@ function blinkIt() {
 				Keeping it held down for a total of 1 second and then releasing it will result in a cold reset, equivalent to
 				power cycling the atari.
 				<p></p>
-				<p><b>Playing Planetary Defense 2012</b></p>
-				<p>
-				Planetary Defense is an arcade game by Charles Bachand and <a href="http://klanky.com/">Tom Hudson</a>
-				<a href="http://analog.katorlegaz.com/analog_1984-03_120dpi_jpeg_cropped_thumpnugget2/analog_1984-03_083.html">
-					published in the A.N.A.L.O.G. Computing magazine</a> on March 1984.
-				Tom has got around to enhancing Planetary Defense especially for Colleen to add two new features:
-				</p><ul>
-					<li> A specially crafted interface to benefit from the touchscreen</li>
-					<li> An online high score table
-				</li></ul>
-				Colleen has been enhanced itself to support these new features.
-				The end result: A highly enjoyable arcade game. We hope you'll like it!
-				<p></p>
-				<p>
-				Objective: Protect your planet from the alien space bombs.
-				As your defense satellite orbits your planet, tap the screen to send charge particle projectiles flying the enemy's way.
-				</p>
-				<p>
-				Planetary Defense 2012 is included in this release of Colleen.
-				To play, go into the preferences screen (menu button or action bar) and choose "Play Planetary Defence 2012" from the "Extras" section.
-				Press OPTION on the starting screen to select the touchscreen control scheme.
-				Tap top-left and bottom-down, as directed to calibrate the touchscreen controls.
-				When your game ends, you will be asked to enter a name for the high score table (you may skip this by just pressing Return).
-				Upon entering a name and pressing Return, Colleen will ask you if you want to go online and submit the high score.
-				Pressing 'Yes' on this dialog will launch the default browser, which will submit your score and allow you to browse the rankings.
-				Hit 'Back' to go back to Colleen.
-				Note that Colleen automatically enables the 'Touchscreen Mode' preference when playing Planetary Defense 2012.
-				You need to manually go uncheck this option if you intend to, f.ex., boot another game and use the joystick.
-				Otherwise, this preference is cleared each time Colleen is restarted.
-				</p>
 				<p><b>Opening a disk image</b></p>
 				<p align="justify">
-				Once the emulator is up and running, hit the <i>Menu</i> button and use the <i>Open</i> option to bring up the file selector.
+				Once the emulator is up and running, tap the <i>Open</i> icon on the top bar to bring up the file selector.
 				Navigate to the required folder on touch an item to auto boot it.
 				The emulator supports the following file formats: <b>atr</b>, <b>atz</b>, <b>xfd</b>, <b>dcm</b>, <b>xfz</b>, <b>xex</b>, <b>cas</b>, 
 				<b>rom</b>, <b>bin</b>, <b>car</b>, <b>a8s</b>, <b>com</b>, <b>exe</b>. 
 				These are the extensions of the filenames supported and range from compressed/uncompressed disk images to cartridges and cassettes.<br><br>
-<!--
-				Many games come in several disk images.
-				To insert a disk image in the drive and not have the machine reboot, simply long press on the item.
-				A menu will show up displaying the currently mounted images on drives D1: to D4:.
-				Touch the drive where you want to mount the image to.
-				Touch <i>Unmount All</i> to unmount images from all drives.
-				There is also a handy shortcut to inserting disk images while the emulator is running:
-				Bring up the emulator menu and touch the <i>Next Side</i> option.
-				Currently this only support images with appropriate filenames using a specific pattern.
-				As an example, if the currently running image's filename in drive D1: is "My Game <b>(s1)</b>.atr", hitting the <i>Next Side</i> option will
-				have the emulator try to mount "My Game <b>(s2)</b>.atr".
-				The key pattern which is searched is of the form "s&lt;number&gt;".
-				Moreover, supposing that a disk images has 4 sides and currently the fourth side is mounted, the some option will mount the first image
-				(i.e. the images wrap around).
--->
 				</p>
 				<p><b>Save state load/save</b></p>
 				<p align="justify">
@@ -153,8 +109,6 @@ function blinkIt() {
 				but this allocation can be inverted by ticking the <i>Right-Handed Joystick</i> option in the emulator Preferences.
 				The percentage of the screen area allocated to either side is also configurable via the <i>Joystick Screen Split</i>
 				option in the Preferences.
-				The <i>Search</i> button of the device also serves as a fire button substitute.
-				This allows single touch devices (pre Eclair) to still use the on screen joystick.
 				The fire button, as well as all joystick input, can further be remapped to other keys through the <i>Keyboard joystick</i> preference.<br><br>
 				The joystick area is marked by a transparent rectangle.
 				Touches registered within the joystick area (joystick deflections) will cause input to the joystick in port 0.
@@ -188,16 +142,16 @@ function blinkIt() {
 				back and home keys, power, call and end call keys.
 				Pressing these while mapping will result in no action (as if nothing was pressed).<br><br>
 				The Wii Controller is another way to provide joystick input to the emulator.
-				You first need to download the 'Wiimote controller' app from the android market.
+				You first need to download the 'Wiimote controller' app from Google Play.
 				Set it up according to the instructions, then fire up Atari800.
 				To use it, the <i>Keyboard Joystick</i> option must be checked in the emulator preferences, as the Wiimote controller
 				acts as a keyboard.
 				Use the <i>Configure Keyboard</i> option in the preferences to remap Wii remote buttons to joystick actions, using the
 				procedure outlined in the previous paragraph.
 				The Wii classic controller can also be used for input.<br><br>
-				A short note with respect to the Xperia Play devices: The square, triangle, the X and both left and right triggers are supported.
-				As such, they can be properly configured within the <i>Configure Keyboard</i> preference.
-				The circle key cannot be mapped to anything as, for compatibility reasons, it is always mapped to the Back key (which exits the emulator).<br><br>
+				A short note with respect to the Xperia Play devices: The square, triangle, X, and both left and right triggers are supported.
+				They can be configured within the <i>Configure Keyboard</i> preference.
+				The circle key cannot be remapped as it is always mapped to the Back key (which exits the emulator).<br><br>
 				<b>Paddle</b><br>
 				Some games support and/or are better with a paddle controller.
 				Paddle emulation is provided by interpreting the x axis of the touch/mouse input as the amount of paddle deflection.
@@ -225,20 +179,15 @@ function blinkIt() {
 				</p><p><b>Breakdown by function</b></p>
 				<p align="justify">
 				<b>Menu</b><br>
-				</p><dl>
+				</p>				<dl>
 					<dt><i>Open</i></dt>
-					<dd>Shows the file selector. Back to cancel. Touch to mount and boot. Long press to mount only. Use the keyboard to filter
+					<dd>Shows the file selector. Back to cancel. Touch to mount and boot. Use the keyboard to filter
 						filenames.</dd>
-					<dt><i>Next side</i></dt>
-					<dd>Attempt to mount the next side in a disk set. A filename pattern is matched, as described above.</dd>
 					<dt><i>Keyboard</i></dt>
 					<dd>Show the virtual keyboard. Back to hide it. Keyboard won't show if the device has a hardware keyboard, or at least if it
 						is exposed (slided out).
 					</dd><dt><i>Preferences</i></dt>
 					<dd>Show the preferences screen for the emulator.</dd>
-					<dt><i>Quit</i></dt>
-					<dd>Quits the emulator. Make a good habit of quitting the emulator cleanly, either by this option or pressing the back key twice.
-						It gives the emulator a chance to clean up any temporary files.</dd>
 				</dl>
 				<b>Preferences</b><br>
 				<dl>
@@ -266,6 +215,10 @@ function blinkIt() {
 							<dd>Disable this to gain more emulation speed. Also, games may be broken by this.</dd>
 							<dt><i>Crop Horizontally, Vertically</i></dt>
 							<dd>Use this to get rid of the borders around the atari screen. Sane values are 320x200.</dd>
+							<dt><i>Portrait Padding</i></dt>
+							<dd>Add extra space at the top of the screen in portrait orientation, useful for devices with a notch or cutout.</dd>
+							<dt><i>Console Key Fade-out</i></dt>
+							<dd>Controls how quickly the console key overlay fades away after inactivity. Set to "Disabled" to keep them always visible.</dd>
 						</dl>
 					</dd>
 					<dt>Emulation</dt>
@@ -290,8 +243,11 @@ function blinkIt() {
 								significantly lower than 100% consider increasing the frameskip, disabling collisions, disabling the high quality sound,
 								lowering the sound mixing frequency and so on.</dd>
 							<dt><i>Allow Web Browser</i></dt>
-							<dd>By checking this option the B: device gets generated in the emulated machine, to be used when the emulated program wants web access
-								(i.e. Planetary Defence 2012). Uncheck this to ignore browser requests.</dd>
+							<dd>By checking this option the B: device gets generated in the emulated machine, to be used when the emulated program wants web access.
+								Uncheck this to ignore browser requests.</dd>
+							<dt><i>Atari800-compatible Function Keys</i></dt>
+							<dd>When checked, the function keys follow Atari800 convention: F2=Option, F3=Select, F4=Start, F5=Reset, F6=Help.
+								When unchecked they use the older mapping: F1=Help, F2=Start, F3=Select, F4=Option, F5=Reset.</dd>
 						</dl>
 					</dd>
 					<dt>Input</dt>
@@ -330,8 +286,8 @@ function blinkIt() {
 							<dd>Virtually extends the joystick area by set amount to prevent joystick recenters for closeby touches.</dd>
 							<dt><i>Paddle Mode</i></dt>
 							<dd>When checked, paddle input will be provided instead of joystick.</dd>
-							<dt><i>Touchscreen Mode</i></dt>
-							<dd>A special control scheme crafted for Planetary Defense 2012. When this is check, all other on-screen joystick/paddle input
+							<dt><i>Koala Pad Mode</i></dt>
+							<dd>Enables full-screen touch input for koala pad / light pen style control. When checked, all other on-screen joystick/paddle input
 								modes are disabled.</dd>
 						</dl>
 					</dd>
@@ -358,13 +314,19 @@ function blinkIt() {
 						  		Setting this option will override this automatic selection and force sound playback through the legacy android audio (use for potential compatibility issues).</dd>
 						</dl>
 					</dd>
-					<dt>Extras</dt>
+				</dl>
+				<dl>
+					<dt>About</dt>
 					<dd>
 						<dl>
-							<dt><i>Planetary Defense 2012</i></dt>
-							<dd>Autoboot the machine with the built-in Planetary Defense 2012 image. Also, auto-enable the 'Touchscreen Mode' preference above.
-							Yes. Do it!</dd>
-					</dl></dd>
+							<dt><i>About</i></dt>
+							<dd>Shows version information, credits, and license.</dd>
+							<dt><i>Help</i></dt>
+							<dd>Opens the online manual in a browser.</dd>
+							<dt><i>Quit</i></dt>
+							<dd>Exits the emulator cleanly. Also works by pressing the Back key twice.</dd>
+						</dl>
+					</dd>
 				</dl>
 				<p></p>
 				<p><b>Changelogs</b></p>
@@ -372,12 +334,14 @@ function blinkIt() {
 
 				<b>4.0</b><br>
 				<i>Changes for version 4.0:</i><br>
-				<br><b>*</b> New always-visible transparent menu bar replaces the hidden action bar.
-				<br><b>*</b> OS ROM imported via system file picker; no more file permission hassles.
-				<br><b>*</b> Save states in private app storage with new Load State option.
-				<br><b>*</b> Console keys always visible in portrait mode.
-				<br><b>*</b> Console keys scale correctly on high-density displays.
-				<br><b>*</b> Fixed joystick positioning after screen rotation.
+				<br><b>*</b> Upgrade to atari800 core v5.2.0+.
+				<br><b>*</b> Removed MANAGE_EXTERNAL_STORAGE permission requirement.
+				<br><b>*</b> OS ROM files imported via SAF picker, stored in private app directory.
+				<br><b>*</b> Save states stored in private directory with new Load State feature.
+				<br><b>*</b> New always-visible transparent menu bar replaces hidden ActionBar.
+				<br><b>*</b> Material Design vector icons for a clean modern look.
+				<br><b>*</b> Console keys always visible in portrait mode and properly scaled on high-DPI screens.
+				<br><b>*</b> Fixed anchored joystick position after screen rotation.
 				<br><b>*</b> Package renamed to cz.pstehlik.colleen.
 				<br><b>*</b> Updated about dialog with current maintainer credits.
 				<br><b>*</b> Various bug fixes and improvements.
@@ -451,5 +415,8 @@ function blinkIt() {
 
 
 
+
+				<br><br>
+				<p align="center"><font size="-1">Copyright &copy; 1998-2026 Atari800 Development Team</font></p>
 
 </body></html>
